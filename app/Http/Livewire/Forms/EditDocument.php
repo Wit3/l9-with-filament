@@ -47,7 +47,9 @@ class EditDocument extends Component implements HasForms
     
 
     public function submit(){
-        
+        $arrayFields = $this->form->getState();
+
+        clock($arrayFields);
     }
 
     public function render():View

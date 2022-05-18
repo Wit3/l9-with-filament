@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('form', function () {
-    return view('form');
+Route::get('form/{id}', function ($id) {
+    return view('form',['document_id' => $id]);
 });
